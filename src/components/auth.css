@@ -1,0 +1,34 @@
+.auth{
+  height: 100%;
+}
+.left_auth,.right_auth{
+  height: 100%;
+
+  width: 50%;
+  position: relative;
+}
+.A_logo{
+  position: absolute;
+  top: 4%;
+  left: 4%;
+}
+.auth_header{position: absolute;
+  top: 4%;
+  left: 4%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.toggle_form h2{
+  cursor: pointer;
+}
+.A_logo >span{
+    color: var(--ternary-color);
+}
+form input[type="submit"] {
+  cursor: pointer;
+}
+
+form .row input {
+  outline: none;
+}

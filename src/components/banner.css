@@ -1,0 +1,29 @@
+.banner_section{
+    height: 60vh;
+    background-color: var(--Primary-light-color);
+}
+.banner{
+    height: 50vh;
+    background-color: var(--Primary-color);
+    box-shadow: var(--Primary-color) 0px 0px 24px;
+    width: 90%;
+    padding: 12px;
+}
+.ad{
+    height: 100%;
+}
+.ad>h3{
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.ad>p{
+    margin: 6px 0;
+}
+.publisher_auther{
+font-style: italic;
+}
+.ad>button{
+    margin: 20px 0;
+    height: 40px;
+    width: 130px;
+}

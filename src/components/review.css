@@ -1,0 +1,92 @@
+
+
+.review_slider {
+  position: relative;
+  width: 700px;   /* adjust as needed */
+  height: 300px;  /* enough to contain one review */
+  width: 50%;
+  z-index:10;
+}
+.review_slider > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease, z-index 0.3s ease;
+}
+.review_slider > div:nth-child(1) {
+  transform: translate(0px, 0px);
+  z-index: 3;
+}
+.review_slider > div:nth-child(2) {
+  transform: translate(20px, 20px);
+  z-index: 2;
+}
+.review_slider > div:nth-child(3) {
+  transform: translate(40px, 40px);
+  z-index: 1;
+}
+.review {
+  padding: 50px 35px;
+  background-color: var(--Primary-light-color);
+  height: 230px;
+  width: 600px;
+  margin: 0 40px;
+  border-width: 1px;
+  border-style: solid;
+  left: 0%;
+  top: 26%;
+  border-color: rgba(102, 102, 102, 0.2);
+  clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 30%);
+}
+.buttom_review_section {
+  margin-top: 35px;
+}
+.buttom_review_section > p {
+  line-height: 22px;
+}
+.quote svg {
+  font-size: 2rem;
+  color: var(--ternary-color);
+}
+.right_section ul li svg {
+  color: gold;
+  margin: 3px;
+}
+.buttom_review_section > p,
+.info > p {
+  color: var(--text-color-secondary);
+}
+
+.review_img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: aqua;
+  margin: 0 12px;
+}
+
+
+@media only screen and (max-width: 768px){
+  .review_slider {
+  width: 200px;   /* adjust as needed */
+  height: 500px;
+  width: 100%;
+}
+.review{
+  margin: 0;
+width: 96%;
+padding:50px 0px;
+}
+.review_slider > div:nth-child(1) {
+  transform: translate(0px, 0px);
+  z-index: 3;
+}
+.review_slider > div:nth-child(2) {
+  transform: translate(5px, 5px);
+  z-index: 2;
+}
+.review_slider > div:nth-child(3) {
+  transform: translate(10px, 10px);
+  z-index: 1;
+}
+}

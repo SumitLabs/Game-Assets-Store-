@@ -1,0 +1,29 @@
+.counter_section {
+  width: 100%;
+  padding: 20px;
+  flex-wrap: wrap !important;
+}
+
+.counter_item {
+  text-align: center;
+  color: var(--text-color-secondary);
+}
+
+.icon {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+.counter_number {
+  font-size: 30px;
+}
+.counter_title {
+  font-size: 20px;
+}
+@media (max-width: 600px) {
+  .counter_section {
+    flex-direction: column;
+  }
+  .counter_item{
+    margin: 30px;
+  }
+}

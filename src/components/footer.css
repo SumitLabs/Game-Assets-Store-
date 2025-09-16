@@ -1,0 +1,142 @@
+footer {
+  background-color: var(--Primary-light-color);
+  position: relative;
+}
+
+.goto_top > button {
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 6vh;
+  background: transparent;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+
+.footer_left_section,
+.footer_right_section {
+  width: 50%;
+  padding: 12px;
+}
+
+.footer_right_section {
+  border-left: 2px solid var(--text-color);
+}
+
+.about {
+  width: 50%;
+  text-align: justify;
+}
+
+.about h1 {
+  font-size: 3rem;
+  color: var(--text-color-secondary);
+}
+
+.footer_left_section h4,.footer_right_section h4 {
+  font-size: 1rem;
+  color: var(--text-color-secondary);
+}
+
+.office {
+  width: 40%;
+
+}
+.office p{
+  text-align: left;
+}
+.social {
+  margin: 16px 0;
+}
+
+.social ul li {
+  margin-right: 12px;
+}
+
+.social>ul>li>a,.help>ul>li>a,.policy>ul>li>a{
+  color: var(--text-color);
+}
+.help>ul>li,.policy>ul>li{
+  margin: 6px 0;
+}
+
+.copy_right {
+  text-align: center;
+  padding: 5px 0;
+  color: var(--text-color-secondary);
+}
+@media only screen and (max-width: 1184px){
+  .map{
+    width: 260px;
+
+  }
+  .about,.help{
+    margin:0 12px;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .footer_container.flex_box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .about,.help{
+    margin:0;
+  }
+  
+
+  .footer_left_section,
+  .footer_right_section {
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+
+  .about,
+  .office {
+    width: 100%;
+    padding-right:12px;
+  }
+
+  .footer_left_section.flex_box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer_contact.flex_box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .social ul {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .about h1 {
+    font-size: 2rem;
+  }
+
+  .footer_left_section h4,
+  .footer_right_section h4 {
+    font-size: 0.9rem;
+  }
+
+  .about p,
+  .office p {
+    font-size: 0.85rem;
+    text-align: justify;
+  }
+  
+
+  .social ul li {
+    margin-right: 8px;
+  }
+}
